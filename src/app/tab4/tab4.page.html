@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="secondary" type="light">Data Pendukung Caleg </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-searchbar></ion-searchbar>
+<ion-content>
+ <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+  <ion-refresher-content
+    pullingIcon="arrow-dropdown"
+    pullingText="Pull to refresh"
+    refreshingSpinner="circles"
+    refreshingText="Refreshing...">
+  </ion-refresher-content>
+</ion-refresher>
+
+
+<ion-card *ngFor="let pemilu of pemilus" >
+  <!-- Agenda Kampus 1 -->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/icon/user.png" alt="Foto Acara Kampus 1">
+      </ion-thumbnail>
+      <ion-label>
+        <p>
+          {{pemilu.Kelurahan}}
+        <ion-card-title color="secondary" type="light">{{pemilu.Nama}}</ion-card-title>
+        
+        <p>Usia: {{pemilu.Usia}} Tahun,
+          {{pemilu.Jenis_kelamin}}</p>
+        <p>Nik: {{pemilu.Nik}}
+          Relawan: {{pemilu.Referensi}}</p>
+      </ion-label>
+    </ion-item>
+    </ion-card>
+
+
+<ion-infinite-scroll  (ionInfinite)="loadData($event)">
+  <ion-infinite-scroll-content
+    loadingSpinner="bubbles"
+    loadingText="Loading more data...">
+  </ion-infinite-scroll-content>
+</ion-infinite-scroll>
+
+</ion-content>

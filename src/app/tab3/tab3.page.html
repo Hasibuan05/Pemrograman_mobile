@@ -1,17 +1,142 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title color="secondary" type="light">
+          ABOUT ME AND MY JOB
+      </ion-title>
     </ion-toolbar>
   </ion-header>
+  
+  <ion-content>
+    <ion-card class="profile-card">
+      <ion-img class="profile-background" src="assets/icon/lola.jpg"></ion-img>
+      <ion-card-content class="card-content">
+        <ion-avatar class="profile-avatar">
+          <ion-img src="assets/icon/lola.jpg"></ion-img>
+        </ion-avatar>
+        <ion-card-title class="ion-text-center">Lola Prastika Hasibuan</ion-card-title>
+        <ion-card-subtitle class="ion-text-center">Pengembang Perangkat Lunak</ion-card-subtitle>
+      </ion-card-content>
+    </ion-card>
+  
+    <!-- Informasi tambahan -->
+    
+      <ion-card class="additional-info">
+        <ion-card-content>
+          <ion-item>
+            <ion-icon name="mail-outline" slot="start"></ion-icon>
+            <ion-label>Email</ion-label>
+            <ion-text>lola7338hasibuan@gmail.com</ion-text>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="location-outline" slot="start"></ion-icon>
+            <ion-label>Alamat</ion-label>
+            <ion-text> Jl.Sei Batanghari, Medan</ion-text>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="calendar-outline" slot="start"></ion-icon>
+            <ion-label>Tanggal Lahir</ion-label>
+            <ion-text>5 OKTOBER 2003</ion-text>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="call-outline" slot="start"></ion-icon>
+            <ion-label>Phone</ion-label>
+            <ion-text>085831035239</ion-text>
+          </ion-item>
+          <!-- Keahlian -->
+  <ion-card class="skills">
+    <ion-card-header>
+      <ion-card-title>Keahlian</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-chip color="primary">HTML</ion-chip>
+      <ion-chip color="primary">CSS</ion-chip>
+      <ion-chip color="primary">JavaScript</ion-chip>
+      <ion-chip color="primary">Angular</ion-chip>
+      <!-- Tambahkan keahlian lainnya sesuai kebutuhan -->
+    </ion-card-content>
+  </ion-card>
+          <!-- Tambahkan informasi tambahan lainnya sesuai kebutuhan -->
+        </ion-card-content>
+      </ion-card>
+      
+     
+    
+        
+    
+  
+  
+<ion-card>
+  <ion-header>
+    <ion-toolbar>
+    <ion-title color="secondary">WORK EXPERIENCE</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
-</ion-content>
+<ion-list>
+  <ion-item>
+    <ion-label>
+      <h2>Senior Web Developer</h2>
+      <p>SMS KAMPANYE , Januari 2018 - Saat Ini</p>
+      <p>Deskripsi: Bertanggung jawab dalam pengembangan aplikasi web dan manajemen tim.</p>
+    </ion-label>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>
+      <h2>IT Consultant</h2>
+      <p> TEMRES, Mei 2015 - Desember 2017</p>
+      <p>Deskripsi: Memberikan konsultasi teknologi informasi kepada klien.</p>
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      <h2>IT Specialist</h2>
+      <p>SMS Real Count Pilkada , 20 Mei 2016 - 02 Juli 2016</p>
+      <p>Deskripsi: Membangun sms real count pilkada di sumatera utara .</p>
+    </ion-label>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>
+      <h2>Manajer Team</h2>
+      <p>Statistika Penduduk , Mei 2021 - Desember 2022</p>
+      <p>Deskripsi: Pembuatan statistika penduduk yang masih kurang update dalam digitalisasi.</p>
+    </ion-label>
+  </ion-item>
+
+  <!-- Tambahkan entri pengalaman kerja lainnya sesuai kebutuhan -->
+</ion-list>
+</ion-card>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="mail"></ion-icon>
+        
+        <ion-label>Kontak</ion-label>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button href="https://github.com/Hasibuan05">
+        <ion-icon name="logo-github" ></ion-icon>
+        
+      </ion-button>
+      
+      <ion-button href="https://web.facebook.com/boru.hasibuan.129142?locale=id_ID">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button href="https://twitter.com/?lang=id">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-button>
+      <!-- Tambahan tautan ke media sosial lainnya -->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
+  </ion-content>
+  
+
+  

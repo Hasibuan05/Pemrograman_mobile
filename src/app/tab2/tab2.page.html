@@ -1,17 +1,75 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+  <ion-title color="secondary" type="light">Registrasi Data Pendukung</ion-title>
+  <ion-buttons slot="start">
+  <ion-back-button></ion-back-button>
+  </ion-buttons>
   </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+ </ion-header>
+ <ion-content padding>
+  <ion-card class="welcome-card bg-content">
+  <ion-card-header>
+  <ion-card-title color="primary">AYO PILIH H CHA EUNWOO</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+  <p>Silakan isikan form dibawah untuk pendataan pendukung Calon Legislatif!.</p>
+  <ion-list>
+      <ion-item>
+        <ion-label position="floating"> Kelurahan/Desa </ion-label>
+        <ion-input type="text" [(ngModel)]="Kelurahan"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> TPS </ion-label>
+        <ion-select [(ngModel)]="Tps" placeholder="Pilih Tempat Pemilihan Suara">
+        <ion-select-option value="1">1</ion-select-option>
+        <ion-select-option value="2">2</ion-select-option>
+        <ion-select-option value="3">3</ion-select-option>
+        <ion-select-option value="4">4</ion-select-option>
+        <ion-select-option value="5">5</ion-select-option>
+        <ion-select-option value="6">6</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+      <ion-label position="floating"> Nama lengkap </ion-label>
+      <ion-input type="text" [(ngModel)]="Nama"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Nik </ion-label>
+      <ion-input type="text" [(ngModel)]="Nik"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"> Tanggal Lahir </ion-label>
+      <ion-input type="text" [(ngModel)]="Tanggal_lahir" placeholder="2003-10-05"></ion-input>
+    </ion-item>
+    <ion-item>
+    <ion-label position="floating">Usia</ion-label>
+      <ion-input type="text" [(ngModel)]="Usia"></ion-input>
+    </ion-item>
+  <ion-item>
+  <ion-label position="floating"> Jenis Kelamin </ion-label>
+  <ion-select [(ngModel)]="Jenis_kelamin" class="popover-content" placeholder="Pilih Jenis Kelamin">
+  <ion-select-option value="Laki-Laki">Laki-laki</ion-select-option>
+  <ion-select-option value="Perempuan">Perempuan</ion-select-option>
+   </ion-select>
+   </ion-item>
+   <ion-item>
+    <ion-label position="floating"> Referensi Relawan </ion-label>
+    <ion-select [(ngModel)]="Referensi" placeholder="Referensi Relawan yang mengajak anda">
+    <ion-select-option value="Mujianto Sastro">Mujianto Sastro</ion-select-option>
+    <ion-select-option value="Sasimo">Sasimo</ion-select-option>
+    <ion-select-option value="Saiful Amri">Saiful Amri</ion-select-option>
+    <ion-select-option value="Satrianto">Satrianto</ion-select-option>
+    <ion-select-option value="Kamal Julianto">Kamal Julianto</ion-select-option>
+    <ion-select-option value="Waluyo pakpakbarat">Waluyo pakpakbarat</ion-select-option>
+    </ion-select>
+  </ion-item>
+   
+   </ion-list>
+   <div padding>
+   <ion-button expand="block" color="primary" size="medium"(click)="addRegister()"><ion-icon name="trending-up-outline"></ion-icon>
+  Daftar</ion-button>
+   
+   </div>
+   </ion-card-content> 
+   </ion-card>
+  </ion-content>

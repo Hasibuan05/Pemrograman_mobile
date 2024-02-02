@@ -1,17 +1,440 @@
-<ion-header [translucent]="true">
+ <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+  <ion-title color="secondary" type="light">Selamat Datang di Aplikasi Calon Pendukung Caleg No.2 Cha Eunwoo!!</ion-title>
+  <ion-buttons slot="start">
+  <ion-back-button>dc</ion-back-button>
+  </ion-buttons>
   </ion-toolbar>
-</ion-header>
+ </ion-header>
+ <ion-content padding>
+  
+  <ion-card class="welcome-card bg-content">
+  <ion-card-content>
+    
+  
+    
+   
+   
+    <ion-card>
+    <ion-grid>
+        <!-- Kolom pertama -->
+        <ion-col size="3">
+          <ion-card>
+            <ion-img  src="assets/icon/calonku2.jpg" ></ion-img>
+          </ion-card>         
+        </ion-col>
+  
+        <!-- Kolom kedua -->
+        <ion-col size="9">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>
+                PROFIL H.CHA EUNWOO 
+              </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p> <ion-text>calon anggota legislatif yang memiliki komitmen kuat
+                 untuk memajukan daerah dan masyarakatnya melalui kepemimpinan yang visioner, berintegritas, dan berdasarkan 
+                 prinsip-prinsip demokrasi. Dengan latar belakang pendidikan dan pengalaman yang luas, Cha eunwoo siap 
+                 menjadikan aspirasi rakyat sebagai panduan dalam upayanya membangun masa depan yang lebih baik. </ion-text></p>
+              
+              <P><ion-button id="open-modal" >Tim Relawan</ion-button>
+                <ion-modal #modal trigger="open-modal">
+                <ng-template>
+                  <ion-content>
+                    <ion-toolbar>
+                      <ion-title>Relawan</ion-title>
+                      <ion-buttons slot="end">
+                        <ion-button color="light" (click)="modal.dismiss()">Close</ion-button>
+                      </ion-buttons>
+                    </ion-toolbar>
+                    <ion-list>
+                      <ion-item>
+                        <ion-avatar slot="start">
+                          <ion-img src="assets/icon/r1.jpg"></ion-img>
+                        </ion-avatar>
+                        <ion-label>
+                          <h2>Mujianti Sastro</h2>
+                          <p>Medan Sunggal,45 th </p>
+                        </ion-label>
+                      </ion-item>
+                      <ion-item>
+                        <ion-avatar slot="start">
+                          <ion-img src="assets/icon/r2.jpg"></ion-img>
+                        </ion-avatar>
+                        <ion-label>
+                          <h2>Sasimo</h2>
+                          <p>Medan Timur, 43 th</p>
+                        </ion-label>
+                      </ion-item>
+                      <ion-item>
+                        <ion-avatar slot="start">
+                          <ion-img src="assets/icon/r3.jpg"></ion-img>
+                        </ion-avatar>
+                        <ion-label>
+                          <h2>Saiful Amri</h2>
+                          <p>Belawan,35 th</p>
+                        </ion-label>
+                      </ion-item>
+                      <ion-item>
+                        <ion-avatar slot="start">
+                          <ion-img src="assets/icon/r4.webp"></ion-img>
+                        </ion-avatar>
+                        <ion-label>
+                          <h2>Satrianto</h2>
+                          <p>Tanjung Morawa,39 th</p>
+                        </ion-label>
+                      </ion-item>
+                      <ion-item>
+                        <ion-avatar slot="start">
+                          <ion-img src="assets/icon/r1.jpg"></ion-img>
+                        </ion-avatar>
+                        <ion-label>
+                          <h2>Kamal Julianto</h2>
+                          <p>Medan Sunggal,45 th </p>
+                        </ion-label>
+                      </ion-item>
+                      <ion-item>
+                        <ion-avatar slot="start">
+                          <ion-img src="assets/icon/r2.jpg"></ion-img>
+                        </ion-avatar>
+                        <ion-label>
+                          <h2>Waluyo pakpakbarat</h2>
+                          <p>Medan Timur, 43 th</p>
+                        </ion-label>
+                      </ion-item>
+                      <ion-item>
+                        <ion-avatar slot="start">
+                          <ion-img src="assets/icon/r1.jpg"></ion-img>
+                        </ion-avatar>
+                        <ion-label>
+                          <h2>Mujianti Sastro</h2>
+                          <p>Medan Sunggal,45 th </p>
+                        </ion-label>
+                      </ion-item>
+                      <ion-item>
+                        <ion-avatar slot="start">
+                          <ion-img src="assets/icon/r2.jpg"></ion-img>
+                        </ion-avatar>
+                        <ion-label>
+                          <h2>Sasimo</h2>
+                          <p>Medan Timur, 43 th</p>
+                        </ion-label>
+                      </ion-item>
+                      <ion-item>
+                        <ion-avatar slot="start">
+                          <ion-img src="assets/icon/r3.jpg"></ion-img>
+                        </ion-avatar>
+                        <ion-label>
+                          <h2>Saiful Amri</h2>
+                          <p>Belawan,35 th</p>
+                        </ion-label>
+                      </ion-item>
+                      <ion-item>
+                        <ion-avatar slot="start">
+                          <ion-img src="assets/icon/r4.webp"></ion-img>
+                        </ion-avatar>
+                        <ion-label>
+                          <h2>Satrianto</h2>
+                          <p>Tanjung Morawa,39 th</p>
+                        </ion-label>
+                      </ion-item>
+                      <ion-item>
+                        <ion-avatar slot="start">
+                          <ion-img src="assets/icon/r1.jpg"></ion-img>
+                        </ion-avatar>
+                        <ion-label>
+                          <h2>Kamal Julianto</h2>
+                          <p>Medan Sunggal,45 th </p>
+                        </ion-label>
+                      </ion-item>
+                      <ion-item>
+                        <ion-avatar slot="start">
+                          <ion-img src="assets/icon/r2.jpg"></ion-img>
+                        </ion-avatar>
+                        <ion-label>
+                          <h2>Waluyo pakpakbarat</h2>
+                          <p>Medan Timur, 43 th</p>
+                        </ion-label>
+                      </ion-item>
+                    </ion-list>
+                  </ion-content>
+                </ng-template>
+              </ion-modal></P>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+   
+    </ion-grid>
+    </ion-card>
+  
+    
+    
+           
+      
+  
+    
+  <!-- Informasi Pribadi -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="secondary">VISI & MISI</ion-card-title>
+      <p>VISI membangun masyarakat yang adil, sejahtera, dan bermartabat. Dengan komitmen ini, dia memiliki MISI untuk:</p>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="cash-outline" slot="start"></ion-icon>
+          Mendorong Pembangunan Ekonomi 
+        </ion-item>
+        <ion-item>
+          <ion-icon name="school-outline" slot="start"></ion-icon>
+          Peningkatan Kualitas Pendidikan
+        </ion-item>
+        <ion-item>
+          <ion-icon name="pulse-outline" slot="start"></ion-icon>
+          Peningkatan Akses Kesehatan 
+        </ion-item>
+        <ion-item>
+          <ion-icon name="body-outline" slot="start"></ion-icon>
+          Pemberdayaan Perempuan dan Pemuda 
+        </ion-item>
+        <ion-item>
+          <ion-icon name="server-outline" slot="start"></ion-icon>
+          Transparansi dan Akuntabilitas
+        </ion-item>
+        <ion-item>
+          <ion-icon name="logo-react" slot="start"></ion-icon>
+          Komunitas dan Keterlibatan Sosial
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+    
+  </ion-card>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+
+
+
+  <!-- Tautan Cepat -->
+  
+    <ion-segment-button >
+      <ion-text color="primary">
+        <h1><strong>STATISTIK RELAWAN</strong></h1>
+      </ion-text>
+    </ion-segment-button>
+    <ion-list>
+      <ion-grid  >
+        <!-- Baris pertama -->
+        <ion-row>
+          <!-- Kolom 1 -->
+          <ion-col size="5" size-md="4" >
+           
+              
+              <ion-card-content >
+                <img src="assets/icon/statistik.png" alt="Foto Acara Kampus 4">
+                
+                
+              </ion-card-content>
+            
+          </ion-col>
+    
+          <!-- Kolom 2 -->
+          <ion-col size="5" size-md="4">
+            
+              
+              <ion-card-content>
+                <img src="assets/icon/s1.png" alt="Foto Acara Kampus 4">
+                
+                
+              </ion-card-content>
+           
+          </ion-col>
+    
+          <!-- Kolom 3 -->
+          <ion-col size="5" size-md="4">
+         
+              
+              <ion-card-content>
+                <img src="assets/icon/s2.png" alt="Foto Acara Kampus 4">
+                
+                
+              </ion-card-content>
+          
+          </ion-col>
+          
+        </ion-row>
+        </ion-grid>
+      </ion-list>
+     
+  
+
+    <ion-segment>
+      <ion-segment-button value="acara">
+        <ion-text color="primary">
+          <h1><strong>PROGRAM KERJA</strong></h1>
+        </ion-text>
+      </ion-segment-button>
+  </ion-segment>
+  <ion-list   >
+    <!-- Agenda Kampus 1 -->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/icon/seminar1.webp" alt="Foto Acara Kampus 1">
+      </ion-thumbnail>
+      <ion-label color="secondary" type="light">
+        <h2><strong>Program Beasiswa Pendidikan</strong></h2>
+        <p>
+          Mendirikan program beasiswa untuk siswa berprestasi namun kurang mampu, guna memastikan akses pendidikan berkualitas tanpa hambatan ekonomi        </p>
+        <p>Tanggal: 15 Februari 2023</p>
+        <p>Waktu: 09:00 - 16:00 WIB</p>
+      </ion-label>
+    </ion-item>
+
+    <!-- Agenda Kampus 2 -->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/icon/seni.jpeg" alt="Foto Acara Kampus 2">
+      </ion-thumbnail>
+      <ion-label color="secondary" type="light" >
+        <h2><strong>Klinik Kesehatan Gratis</strong></h2>
+        <p>
+          Mengadakan klinik kesehatan gratis secara berkala bagi masyarakat kurang mampu, dengan kolaborasi bersama tenaga medis dan rumah sakit setempat.        </p>
+        <p>Tanggal: 20 Maret 2023</p>
+        <p>Waktu: 10:00 - 18:00 WIB</p>
+       
+      </ion-label>
+    </ion-item>
+
+    <!-- Agenda Kampus 3 -->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/icon/debat.jpg" alt="Foto Acara Kampus 3">
+      </ion-thumbnail>
+      <ion-label color="secondary" type="light">
+        <h2><strong>Diskusi Publik tentang Kebijakan Publik</strong></h2>
+        <p>
+          Mengadakan diskusi terbuka dengan masyarakat untuk membahas rencana legislasi dan mendengar masukan masyarakat sebelum mengambil keputusan.        </p>
+        <p>Tanggal: 5 April 2023</p>
+        <p>Waktu: 14:00 - 17:00 WIB</p>
+        <p>Tempat: Aula Besar Kampus ITB INDONESIA</p>
+      </ion-label>
+    </ion-item>
+
+    <!-- Agenda Kampus 4 -->
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="assets/icon/kuliah.JPG" alt="Foto Acara Kampus 4">
+      </ion-thumbnail>
+      <ion-label color="secondary" >
+        <h2><strong>Bengkel Keterampilan untuk Pemberdayaan Masyarakat</strong></h2>
+        <p>
+          Mengorganisir bengkel keterampilan seperti menjahit, memasak, atau keterampilan digital bagi pengangguran dan ibu rumah tangga untuk meningkatkan potensi ekonomi.        </p>
+        <p>Tanggal: 10 Mei 2023</p>
+        <p>Waktu: 18:00 - 20:00 WIB</p>
+        
+      </ion-label>
+    </ion-item>
+    </ion-list>
+  
+       
+  <ion-segment>
+    <ion-segment-button value="acara">
+      <ion-text color="primary">
+        <h1><strong>GALERI</strong></h1>
+      </ion-text>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-card>
+  <ion-list>
+  <ion-grid>
+    <!-- Baris pertama -->
+    <ion-row>
+      <!-- Kolom 1 -->
+      <ion-col size="6" size-md="3">
+     
+          
+          <ion-card-content>
+            <img src="assets/icon/g1.jpeg" alt="Foto Acara Kampus 4">
+          </ion-card-content>
+        
+      </ion-col>
+
+      <!-- Kolom 2 -->
+      <ion-col size="6" size-md="3">
+       
+          
+          <ion-card-content>
+            <img src="assets/icon/g5.jpeg" alt="Foto Acara Kampus 4">
+          </ion-card-content>
+       
+      </ion-col>
+
+      <!-- Kolom 3 -->
+      <ion-col size="6" size-md="3">
+       
+          
+          <ion-card-content>
+            <img src="assets/icon/g1.jpeg" alt="Foto Acara Kampus 4">
+          </ion-card-content>
+       
+      </ion-col>
+
+      <!-- Kolom 4 -->
+      <ion-col size="6" size-md="3">
+        
+          
+          <ion-card-content>
+            <img src="assets/icon/g2.jpeg" alt="Foto Acara Kampus 4">
+          </ion-card-content>
+      
+      </ion-col>
+    </ion-row>
+
+    <!-- Baris kedua -->
+    <ion-row>
+      <!-- Kolom 5 -->
+      <ion-col size="6" size-md="3">
+        
+          
+          <ion-card-content>
+            <img src="assets/icon/g2.jpeg" alt="Foto Acara Kampus 4">
+          </ion-card-content>
+     
+      </ion-col>
+
+      <!-- Kolom 6 -->
+      <ion-col size="6" size-md="3">
+       
+          <ion-card-content>
+            <img src="assets/icon/g6.jpg" alt="Foto Acara Kampus 4">
+          </ion-card-content>
+      
+      </ion-col>
+
+      <!-- Kolom 7 -->
+      <ion-col size="6" size-md="3">
+      
+          <ion-card-content>
+            <img src="assets/icon/g4.jpg" alt="Foto Acara Kampus 4">
+          </ion-card-content>
+     
+      </ion-col>
+
+      <!-- Kolom 8 -->
+      <ion-col size="6" size-md="3">
+        
+          
+          <ion-card-content>
+            <img src="assets/icon/g7.jpg" alt="Foto Acara Kampus 4">
+          </ion-card-content>
+       
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-list>
+</ion-card>
+  <!-- Footer -->
+  <ion-footer>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-button expand="full" fill="outline" href="http://localhost:8100/tabs/tab3">Hubungi Kami</ion-button>
     </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+  </ion-footer>
